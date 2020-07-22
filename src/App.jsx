@@ -15,6 +15,7 @@ import FamiliaMenbro from  './Components/basicos/FamiliaMenbro'
 import ListaAlunos from './Components/basicos/repeticao/ListaAlunos'
 import ListaProdutos from './Components/basicos/repeticao/ListaProdutos'
 import ParOuImpar from './Components/basicos/condicional/ParOuImpar'
+import UsuarioInfo from './Components/basicos/condicional/UsuarioInfo'
 
 
 export default function App() {
@@ -56,6 +57,8 @@ export default function App() {
         </Card>
         <Card titulo="Condicional ">
         <ParOuImpar numero={5}></ParOuImpar>
+        <UsuarioInfo usuario={{ nome:"Enzo"}}></UsuarioInfo>
+       
         </Card>
       </div>
     </div>
