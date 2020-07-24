@@ -9,13 +9,15 @@ import ComParametro from './Components/basicos/ComParametro'
 import Fragmento from './Components/basicos/Fragmento'
 import Aleatorio from './Components/basicos/Aleatorio'
 import Card from './Components/Layout/Card'
-import Familia from  './Components/basicos/Familia'
-import FamiliaPai from  './Components/basicos/FamiliaPai'
-import FamiliaMenbro from  './Components/basicos/FamiliaMenbro'
+import Familia from './Components/basicos/Familia'
+import FamiliaPai from './Components/basicos/FamiliaPai'
+import FamiliaMenbro from './Components/basicos/FamiliaMenbro'
 import ListaAlunos from './Components/basicos/repeticao/ListaAlunos'
 import ListaProdutos from './Components/basicos/repeticao/ListaProdutos'
 import ParOuImpar from './Components/basicos/condicional/ParOuImpar'
 import UsuarioInfo from './Components/basicos/condicional/UsuarioInfo'
+import DiretaPai from './Components/basicos/comunicacao/DiretaPai'
+import IndiretaPai from './Components/basicos/comunicacao/IndiretaPai'
 
 
 export default function App() {
@@ -41,24 +43,30 @@ export default function App() {
           <ComParametro titulo="Rogerio" subtitulo="Bianca"></ComParametro>
         </Card>
         <Card titulo="Famiia">
-        <Familia sobrenome="Ferreira"></Familia>
+          <Familia sobrenome="Ferreira"></Familia>
         </Card>
         <Card titulo="Famiia Pai">
-        <FamiliaPai>
-          <FamiliaMenbro nome="Rogerio"></FamiliaMenbro>          
-          <FamiliaMenbro nome="Enzo"></FamiliaMenbro>
-        </FamiliaPai>
+          <FamiliaPai>
+            <FamiliaMenbro nome="Rogerio"></FamiliaMenbro>
+            <FamiliaMenbro nome="Enzo"></FamiliaMenbro>
+          </FamiliaPai>
         </Card>
         <Card titulo="Lista de Alunos">
-        <ListaAlunos></ListaAlunos>
+          <ListaAlunos></ListaAlunos>
         </Card>
         <Card titulo="Lista de Produtos">
-       <ListaProdutos></ListaProdutos>
+          <ListaProdutos></ListaProdutos>
         </Card>
         <Card titulo="Condicional ">
-        <ParOuImpar numero={5}></ParOuImpar>
-        <UsuarioInfo usuario={{ nome:"Enzo"}}></UsuarioInfo>
-       
+          <ParOuImpar numero={5}></ParOuImpar>
+          <UsuarioInfo usuario={{ nome: "Enzo" }}></UsuarioInfo>
+
+        </Card>
+        <Card titulo="Comunicação Direta ">
+          <DiretaPai></DiretaPai>
+        </Card>
+        <Card titulo="Comunicação Indireta ">
+        <IndiretaPai></IndiretaPai>
         </Card>
       </div>
     </div>
