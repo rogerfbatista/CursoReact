@@ -15,9 +15,7 @@ export  default (props)=>{
             <div className="Title" style={estilo}>
                 {props.titulo}
             </div>
-            <div className="Content">
-              Conteudo
-            </div>
+           
             <div className="Content">
               {props.children}
             </div>

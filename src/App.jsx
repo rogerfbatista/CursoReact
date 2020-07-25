@@ -18,7 +18,7 @@ import ParOuImpar from './Components/basicos/condicional/ParOuImpar'
 import UsuarioInfo from './Components/basicos/condicional/UsuarioInfo'
 import DiretaPai from './Components/basicos/comunicacao/DiretaPai'
 import IndiretaPai from './Components/basicos/comunicacao/IndiretaPai'
-
+import ComponenteClass from './Components/basicos/ComponenteClass.jsx'
 
 export default function App() {
 
@@ -67,6 +67,9 @@ export default function App() {
         </Card>
         <Card titulo="Comunicação Indireta ">
         <IndiretaPai></IndiretaPai>
+        </Card>
+        <Card titulo="Componente Class Controladora ">
+          <ComponenteClass></ComponenteClass>
         </Card>
       </div>
     </div>
